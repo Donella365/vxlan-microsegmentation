@@ -24,7 +24,7 @@ Create isolated Layer 2 overlays (VXLANs) for different workloads (e.g., web ser
 
 ## ⚙️ Step-by-Step Setup
 
-### 1. Launch 2 Ubuntu Server VMs
+### 1. Launched 2 Ubuntu Server VMs
 
 Use VirtualBox to spin up:
 - `web-vm`: 192.168.56.101  
@@ -34,7 +34,7 @@ Ensure both VMs are on the same host-only network and can ping each other.
 
 ---
 
-### 2. Configure VXLAN Tunnel (on **each** VM)
+### 2. Configured VXLAN Tunnel (on **each** VM)
 
 Replace `<peer_IP>` with the *other* VM's IP address:
 
@@ -51,7 +51,7 @@ ip link set br0 up
 
 ---
 
-### 3. Add Dummy Interfaces to Simulate Workloads
+### 3. Added Dummy Interfaces to Simulate Workloads
 
 ```bash
 ip link add dummy0 type dummy
